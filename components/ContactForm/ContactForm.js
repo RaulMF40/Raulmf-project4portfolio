@@ -37,7 +37,7 @@ const ContactForm = () => {
       <div class="contact-links">
         <ul>
           <li>
-            <a href="https://github.com/RaulMF40" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://github.com/RaulMF40/Raulmf-project4portfolio" target="_blank" rel="noopener noreferrer">GitHub</a>
           </li>
           <li>
             <a href="https://www.linkedin.com/in/ra%C3%BAl-moya-fuentes-b2637a46/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
