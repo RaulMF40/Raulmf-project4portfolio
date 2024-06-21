@@ -1,0 +1,77 @@
+/* Studies.css */
+
+/* Estilo general para la sección de estudios */
+.studies {
+  padding: 1rem;
+  animation: fadeIn 1s ease-in-out;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo creativo para los h2 */
+.studies h2 {
+  color: #2c3e50;
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.studies h2::after {
+  content: '';
+  width: 50%;
+  height: 4px;
+  background: linear-gradient(to right, #3498db, #8e44ad);
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Estilo creativo para los h3 */
+.studies h3 {
+  color: #16a085;
+  font-size: 1.8em;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.studies p,
+.studies ul {
+  color: #333;
+  line-height: 1.6;
+}
+
+.studies ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.studies ul li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.studies ul li::before {
+  content: '✔';
+  color: #3498db;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Animación fadeIn */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

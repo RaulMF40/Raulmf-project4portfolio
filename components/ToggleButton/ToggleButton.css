@@ -1,0 +1,8 @@
+.toggle-button {
+  display: block;
+  background: linear-gradient(to right, #3498db, #8e44ad);
+  margin: 1rem auto;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}

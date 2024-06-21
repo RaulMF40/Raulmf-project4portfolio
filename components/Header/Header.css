@@ -1,0 +1,146 @@
+#menu-button {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #2c3e50;
+}
+
+#menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+#menu li {
+  display: inline;
+}
+
+#menu a {
+  color: #2c3e50;
+  text-decoration: none;
+  position: relative;
+}
+
+#menu-button.active #menu-icon span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+#menu-button.active #menu-icon span:nth-child(2) {
+  opacity: 0;
+}
+
+#menu-button.active #menu-icon span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+header {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: linear-gradient(to right, #3498db, #8e44ad);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+#header-name {
+  cursor: pointer;
+  color: #2c3e50;
+  font-size: 24px;
+  margin-left: 10px;
+  padding: 0;
+}
+
+body {
+  padding-top: 120px;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0;
+}
+
+header li {
+  text-align: center;
+  list-style-type: none;
+  margin: 0 15px;
+}
+
+header li.contact {
+  margin-left: auto;
+  margin: 0 15px;
+}
+
+header #menu-button {
+  display: auto;
+}
+
+.menu-item {
+  color: #2c3e50;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    height: 124px;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    display: none;
+  }
+
+  header nav ul.show {
+    display: auto;
+  }
+
+  header #menu-button {
+    display: auto;
+  }
+
+  body {
+    padding-top: 120px;
+  }
+
+  #menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 6rem;
+    left: 0;
+  }
+
+  #menu a {
+    color: whitesmoke;
+    text-decoration: none;
+    position: relative;
+  }
+
+  #menu.show {
+    display: flex;
+  }
+
+  #menu-button {
+    display: block;
+  }
+
+  #menu li {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #444;
+  }
+
+  #menu li:last-child {
+    border-bottom: none;
+  }
+}

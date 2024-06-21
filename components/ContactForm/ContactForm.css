@@ -1,0 +1,115 @@
+.contact {
+  margin: 6rem 0;
+  text-align: center;
+}
+
+.contact h2 {
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+  font-size: 2.5em;
+  position: relative;
+  z-index: 1;
+}
+
+.contact h2::after {
+  content: '';
+  width: 50%;
+  height: 4px;
+  background: linear-gradient(to right, #3498db, #8e44ad);
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.toggle-button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 0.8rem 1.6rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 1rem 0;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-button:hover {
+  background-color: #45a049;
+}
+
+.contact-form {
+  margin: 1rem 0;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.contact-form label {
+  display: block;
+  margin: 0.5rem 0;
+  color: #333;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button[type='submit'] {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 0.8rem 1.6rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button[type='submit']:hover {
+  background-color: #45a049;
+}
+
+.contact-links ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.contact-links ul li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.contact-links ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.contact-links ul li a:hover {
+  color: #3498db;
+}
+
+.hidden {
+  display: none;
+}
